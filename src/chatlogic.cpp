@@ -226,6 +226,7 @@ void ChatLogic::LoadAnswerGraphFromFile(std::string filename)
     // add pointer to chatlogic so that chatbot answers can be passed on to the GUI
     chat_passed->SetChatLogicHandle(this);
     chat_passed->SetRootNode(rootNode);
+    SetChatbotHandle(chat_passed.get());
     rootNode->MoveChatbotHere(std::move(chat_passed));
     //_chatBot->SetRootNode(rootNode);
     //rootNode->MoveChatbotHere(_chatBot);

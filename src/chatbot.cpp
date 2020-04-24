@@ -127,7 +127,6 @@ void ChatBot::ReceiveMessageFromUser(std::string message)
         // go back to root node
         newNode = _rootNode;
     }
-
     // tell current node to move chatbot to new node
     _currentNode->MoveChatbotToNewNode(newNode);
 }
