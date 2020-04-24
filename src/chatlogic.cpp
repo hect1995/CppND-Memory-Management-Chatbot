@@ -45,7 +45,7 @@ ChatLogic::~ChatLogic()
     //}
 
     // delete chatbot instance
-    delete _chatBot;
+    //delete _chatBot;
 
 
     ////
